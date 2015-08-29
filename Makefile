@@ -27,6 +27,7 @@ container:
 build: submodule
 	rm -rf $(BUILD_DIR)
 	cp -R upstream $(BUILD_DIR)
+	cd $(BUILD_DIR) && ./autogen.sh
 	cd $(BUILD_DIR) && CC=musl-gcc CFLAGS='$(CFLAGS)' ./configure $(PATH_FLAGS)
 	cd $(BUILD_DIR) && make install
 	mkdir -p $(RELEASE_DIR)/usr/share/licenses/$(PACKAGE)
