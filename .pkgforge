@@ -18,8 +18,6 @@ build do
   install
 end
 
-patch 'license.patch'
-
 test do
   run 'xz --version'
 end
