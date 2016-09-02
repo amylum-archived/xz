@@ -1,0 +1,25 @@
+name 'xz'
+org 'amylum'
+
+licenses %w(COPYING COPYING.GPLv2 COPYING.GPLv3 COPYING.LGPLv2.1)
+
+configure_flags(
+  prefix: '/usr',
+  sbindir: '/usr/bin',
+  sysconfdir: '/etc',
+)
+
+harden
+
+build do
+  run './autogen.sh'
+  configure
+  make
+  install
+end
+
+patch 'license.patch'
+
+test do
+  run 'xz --version'
+end
