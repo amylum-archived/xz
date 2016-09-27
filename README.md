@@ -1,7 +1,7 @@
 xz
 ==========
 
-[![Build Status](https://img.shields.io/circleci/project/amylum/xz.svg)](https://circleci.com/gh/amylum/xz)
+[![Build Status](https://img.shields.io/circleci/project/amylum/xz/master.svg)](https://circleci.com/gh/amylum/xz)
 [![GitHub release](https://img.shields.io/github/release/amylum/xz.svg)](https://github.com/amylum/xz/releases)
 [![GPL Licensed](http://img.shields.io/badge/license-GPL2+-green.svg)](https://tldrlegal.com/license/gnu-general-public-license-v2)
 
